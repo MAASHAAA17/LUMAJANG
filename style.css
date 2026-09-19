@@ -1,125 +1,121 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
 
-/* Global */
 body {
     font-family: 'Plus Jakarta Sans', sans-serif;
-    background-color: #f8faf9;
+    background-color: #f4f6f8;
+    color: #333333;
 }
 
-/* Header & Footer */
-.topbar-lumajang {
-    background: linear-gradient(135deg, #0d1e14 0%, #1a3622 100%);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+/* Tema Warna Hijau Zaitun (Leaf) & Emas (Banana/Sunlight) */
+.topbar-lumajang, .hero-section {
+    background: linear-gradient(135deg, #12261a 0%, #1a3622 100%);
 }
 
-/* Banner */
-.hero-section {
-    background-image: 
-        radial-gradient(rgba(245, 158, 11, 0.1) 1px, transparent 1px),
-        linear-gradient(135deg, #1a3622 0%, #0d1e14 100%);
-    background-size: 30px 30px, 100% 100%;
-    padding-bottom: 90px; 
-}
-
-/* Warna */
-.bg-emas {
-    background: linear-gradient(135deg, #FBBF24 0%, #F59E0B 100%) !important;
-}
 .text-emas {
-    color: #FBBF24 !important;
+    color: #f59e0b !important;
 }
+
+.bg-emas {
+    background-color: #f59e0b !important;
+    color: #1a3622 !important;
+}
+
 .border-emas {
-    border-color: #F59E0B !important;
-}
-.drop-shadow-emas {
-    filter: drop-shadow(0px 4px 8px rgba(245, 158, 11, 0.3));
-}
-.text-glow {
-    text-shadow: 0 2px 10px rgba(245, 158, 11, 0.2);
+    border-color: #f59e0b !important;
 }
 
-/* Navbar */
-.navbar .nav-link {
-    color: #4a5568 !important;
-    font-size: 15px;
-    transition: all 0.3s ease;
-}
-.navbar .nav-link.active, .navbar .nav-link:hover {
-    color: #F59E0B !important;
-    font-weight: 700;
-}
-
-.card {
-    border-radius: 24px !important;
-}
-
-/* Tombol */
 .btn-emas {
-    background: linear-gradient(135deg, #FBBF24 0%, #F59E0B 100%);
+    background-color: #f59e0b;
     border: none;
-    color: #0d1e14 !important;
+    color: #1a3622;
     transition: all 0.3s ease;
-}
-.btn-emas:hover {
-    background: linear-gradient(135deg, #F59E0B 0%, #D97706 100%);
-    transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(245, 158, 11, 0.4) !important;
 }
 
-.btn-kaca {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(8px);
-    border: 1px solid rgba(251, 191, 36, 0.5);
-    color: #FBBF24;
-    padding: 8px 20px;
-    transition: all 0.3s ease;
-}
-.btn-kaca:hover {
-    background: #FBBF24;
-    color: #0d1e14;
-    box-shadow: 0 5px 15px rgba(245, 158, 11, 0.3);
+.btn-emas:hover {
+    background-color: #d9822b;
+    color: #ffffff;
     transform: translateY(-2px);
 }
 
-.hover-emas:hover {
-    background-color: #FBBF24 !important;
-    color: #0d1e14 !important;
-    transform: translateY(-3px);
+/* Tombol Transparan / Kaca */
+.btn-kaca {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #ffffff;
     transition: all 0.3s ease;
 }
 
-/* Form & Sidebar */
+.btn-kaca:hover {
+    background: rgba(255, 255, 255, 0.25);
+    color: #ffffff;
+}
+
+/* Efek Glow pada Teks */
+.text-glow {
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.drop-shadow-emas {
+    filter: drop-shadow(0 0 8px rgba(245, 158, 11, 0.5));
+}
+
+/* Styling Input & Form */
 .custom-input {
+    background-color: #f9fafb;
+    border: 1px solid #e5e7eb;
+    padding: 12px 16px;
     border-radius: 12px;
-    padding: 12px 15px;
-    border: 1.5px solid #e2e8f0;
-    background-color: #f8fafc;
-    transition: all 0.3s;
-}
-.custom-input:focus {
-    border-color: #F59E0B;
-    background-color: #ffffff;
-    box-shadow: 0 0 0 0.25rem rgba(245, 158, 11, 0.15);
-}
-
-.recaptcha-box {
     transition: all 0.3s ease;
 }
-.recaptcha-box:hover {
-    border-color: #cbd5e1 !important;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+
+.custom-input:focus {
+    background-color: #ffffff;
+    border-color: #f59e0b;
+    box-shadow: 0 0 0 4px rgba(245, 158, 11, 0.15);
 }
 
-.hover-berita {
-    border: 1px solid transparent;
+/* Efek Hover untuk Card Berita & Sidebar */
+.hover-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(245, 158, 11, 0.15) !important;
+    border-color: #f59e0b !important;
 }
+
 .hover-berita:hover {
-    background-color: #ffffff !important;
-    border: 1px solid #F59E0B;
-    box-shadow: 0 4px 15px rgba(245, 158, 11, 0.1);
+    background-color: #fff9e6 !important;
     transform: translateX(5px);
 }
 
 .transition-all {
     transition: all 0.3s ease;
+}
+
+/* Desain Navigasi Halaman (Pagination) */
+.custom-pagination .page-link {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px !important;
+    color: #495057;
+    font-weight: 600;
+    border: 1px solid #dee2e6;
+    margin: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+.custom-pagination .page-link:hover {
+    background-color: #f8f9fa;
+    color: #1a3622;
+    border-color: #c6cacc;
+}
+
+.custom-pagination .page-item.active .page-link {
+    background-color: #19664c; /* Warna Hijau Tua (Mirip di gambar) */
+    color: white;
+    border-color: #19664c;
+    box-shadow: 0 4px 6px rgba(25, 102, 76, 0.2);
 }
