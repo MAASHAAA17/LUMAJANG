@@ -17,7 +17,7 @@
                 <img src="https://raw.githubusercontent.com/MAASHAAA17/LUMAJANG/388beccff92c3f3bb2cdd9f6117db1ec742fa7f4/img/Logo_lumajang.png" alt="Logo Lumajang" width="50" class="me-3 drop-shadow-emas">
                 <div>
                     <div class="small-text text-emas">SISTEM INFORMASI KABUPATEN</div>
-                    <h4 class="mb-0 fw-bold">Lumajang</h4>
+                    <h4 class="mb-0 fw-bold">LUMAJANG</h4>
                 </div>
             </div>
             <div class="d-none d-md-block text-end font-monospace small">
@@ -72,7 +72,7 @@
                         <span id="article-views"></span>
                     </div>
 
-                    <img id="article-img" src="" class="img-fluid rounded-4 mb-4 w-100 object-fit-cover shadow-sm" style="max-height: 400px;" alt="Cover Berita">
+                    <img id="article-img" src="" class="img-fluid rounded-4 mb-4 w-100 object-fit-cover shadow-sm" style="max-height: 400px; display: none;" alt="Cover Berita">
 
                     <div id="article-content" class="text-secondary" style="line-height: 1.9; text-align: justify; font-size: 16px;">
                         <!-- Isi berita akan masuk otomatis lewat script.js -->
@@ -104,32 +104,15 @@
                         <h5 class="fw-bold border-bottom border-3 border-emas pb-2 mb-0" style="color: #1a3622;">Berita Lainnya</h5>
                     </div>
                     
-                    <a href="detail_berita.html?id=2" class="text-decoration-none">
-                        <div class="d-flex gap-3 mb-3 p-2 bg-light rounded-3 align-items-center hover-berita transition-all">
-                            <img src="https://images.unsplash.com/photo-1545199653-90d5bc51ea96?auto=format&fit=crop&w=100&q=80" width="65" height="65" class="rounded object-fit-cover shadow-sm" alt="Berita">
-                            <div>
-                                <h6 class="fw-bold mb-1" style="font-size: 14px; color: #1a3622;">Jembatan Gladak Perak Beroperasi...</h6>
-                                <small class="text-muted"><i class="far fa-calendar text-emas"></i> 10 Sep 2026</small>
-                            </div>
-                        </div>
-                    </a>
-
-                    <a href="detail_berita.html?id=3" class="text-decoration-none">
-                        <div class="d-flex gap-3 p-2 bg-light rounded-3 align-items-center hover-berita transition-all">
-                            <img src="https://images.unsplash.com/photo-1506017006817-2195dfb87be2?auto=format&fit=crop&w=100&q=80" width="65" height="65" class="rounded object-fit-cover shadow-sm" alt="Berita">
-                            <div>
-                                <h6 class="fw-bold mb-1" style="font-size: 14px; color: #1a3622;">Eksotisme Tumpak Sewu Siap...</h6>
-                                <small class="text-muted"><i class="far fa-calendar text-emas"></i> 08 Sep 2026</small>
-                            </div>
-                        </div>
-                    </a>
+                    <!-- JS akan otomatis memasukkan 3 berita terbaru ke sini tanpa menduplikasi berita yang dibaca -->
+                    <div id="auto-sidebar-berita"></div>
                 </div>
             </div>
 
         </div>
     </div>
 
-    <!-- Footer Modern (DIPERBAIKI SAMA DENGAN INDEX) -->
+    <!-- Footer Modern (DIKEMBALIKAN FULL) -->
     <footer class="text-white pt-5 pb-4 topbar-lumajang">
         <div class="container">
             <div class="row g-4">
@@ -226,8 +209,8 @@
         </a>
     </div>
 
-    <!-- Bootstrap JS & Custom Script -->
+    <!-- Trik Anti Cache ?v=4 dipasang di sini -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
+    <script src="script.js?v=4"></script>
 </body>
 </html>
